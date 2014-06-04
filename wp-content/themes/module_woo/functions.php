@@ -103,3 +103,45 @@ add_filter('nav_menu_link_attributes', function($atts, $item, $args) {
  
     return $atts;
 }, 10, 3);
+
+
+
+
+function codex_custom_init() {
+    
+    // membres
+    $labels = array(
+        'name' => 'Membres',
+        'singular_name' => 'membre',
+        'add_new' => 'Nouveau membres',
+        'add_new_item' => 'Ajouter un nouveau membre',
+        'edit_item' => 'Editer une Membre',
+        'new_item' => 'Nouveau Membre',
+        'all_items' => 'Tous les membres',
+        'view_item' => 'Voir un Membre',
+        'search_items' => 'Chercher un Membre',
+        'not_found' =>  'Aucun membre trouvé',
+        'not_found_in_trash' => 'Aucun membre trouvé dans la corbeille', 
+        'parent_item_colon' => '',
+        'menu_name' => 'Membres'
+    );
+    $args = array(
+        'labels' => $labels,
+        'public' => true,
+        'publicly_queryable' => true,
+        'show_ui' => true, 
+        'show_in_menu' => true, 
+        'query_var' => true,
+        'rewrite' => array( 'slug' => 'membre' ),
+        'capability_type' => 'post',
+        'has_archive' => true, 
+        'hierarchical' => false,
+        'menu_position' => null,
+        'supports' => array( 'title', 'thumbnail')
+    ); 
+    register_post_type('membre', $args );
+
+    
+}
+add_action('init', 'codex_custom_init');
+
