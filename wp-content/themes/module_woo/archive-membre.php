@@ -10,7 +10,10 @@ Template Name: membres
         if( $books_loop->have_posts() ):
            while( $books_loop->have_posts() ): $books_loop->the_post();?>
             <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-              <h1> <?php the_field("date_de_naissance"); ?> </h1>
+              <h1><?php the_field("nom_du_membre"); ?></h1>
+              <p> <?php the_field("date_de_naissance"); ?> </p>
+              <img src= '<?php the_field("photos"); ?>'>
+
             </article>
            <?php endwhile;
         endif;

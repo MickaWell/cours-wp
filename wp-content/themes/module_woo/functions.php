@@ -139,6 +139,7 @@ function codex_custom_init() {
         'menu_position' => null,
         'supports' => array( 'title', 'thumbnail')
     ); 
+    
     register_post_type('membre', $args );
 
     
