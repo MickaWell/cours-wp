@@ -1,5 +1,4 @@
 /* Move down content because we have a fixed navbar that is 50px tall */
-<<<<<<< HEAD
  body {
     padding-top: 50px;
     padding-bottom: 20px;
@@ -7,16 +6,6 @@
     /* Old browsers */
 }
 .container {
-=======
-body {
-  padding-top: 50px;
-  padding-bottom: 20px;
-  background: #3A3838; /* Old browsers */
-
-
-}
-.container{
->>>>>>> 2ff47b35b1fb5fdc395a9efe954ab930b7d30902
     max-width: 980px;
 }
 .bloc {
@@ -57,7 +46,6 @@ body {
     border-color: #E7E7E7;
     border-radius: 4px;
 }
-<<<<<<< HEAD
 @media screen and (max-width: 768px) {
     #logo {
         display:block;
@@ -95,5 +83,3 @@ footer nav li {
     display: inline;
     padding-right: 5px;
 }
-=======
->>>>>>> 2ff47b35b1fb5fdc395a9efe954ab930b7d30902
