@@ -1,28 +1,23 @@
 /* Move down content because we have a fixed navbar that is 50px tall */
-body {
-  padding-top: 50px;
-  padding-bottom: 20px;
-background: #3A3838; /* Old browsers */
-
-
+ body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background: #3A3838;
+    /* Old browsers */
 }
-.container{
+.container {
     max-width: 980px;
-
 }
-
-.bloc{
+.bloc {
     background-color:#EEEEEE;
-     padding-left: 15px;
+    padding-left: 15px;
     padding-right: 15px;
     text-align: center;
 }
-#logo{
-
+#logo {
     height: 60px;
 }
-
-.first-bloc{
+.first-bloc {
     background-color:#EEEEEE;
     margin-bottom: 30px;
 }
@@ -46,33 +41,45 @@ background: #3A3838; /* Old browsers */
 .first-bloc .container {
     max-width: 100%;
 }
-
-.navbar-collapse{
+.navbar-collapse {
     background-color: #F8F8F8;
     border-color: #E7E7E7;
     border-radius: 4px;
 }
 @media screen and (max-width: 768px) {
-
-#logo{ 
-    display:block;
-    height: 90px;
-    margin: 0 auto;
-    width: 250px;
-    margin-bottom: 15px;
+    #logo {
+        display:block;
+        height: 90px;
+        margin: 0 auto;
+        width: 250px;
+        margin-bottom: 15px;
+    }
 }
-}
-
 @media screen and (min-width: 768px) {
-.first-bloc {
-    padding-bottom: 48px;
-    padding-top: 48px;
+    .first-bloc {
+        padding-bottom: 48px;
+        padding-top: 48px;
+    }
+    .container .first-bloc {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    .first-bloc h1, .first-bloc .h1 {
+        font-size: 63px;
+    }
 }
-.container .first-bloc {
-    padding-left: 60px;
-    padding-right: 60px;
+.container div.col-md-12 {
+    margin-bottom: 30px;
 }
-.first-bloc h1, .first-bloc .h1 {
-    font-size: 63px;
+footer nav {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
 }
+footer nav a {
+    color: #ffffff;
+}
+footer nav li {
+    display: inline;
+    padding-right: 5px;
 }

@@ -1,5 +1,14 @@
  <footer>
-        <p>&copy; Company 2014</p>
+         <nav>
+          
+            <?php
+            wp_nav_menu(array(
+            'theme_location' => 'footer',
+            'container' => false
+            ));
+            ?>
+         
+        </nav>
       </footer>
     </div> <!-- /container -->
                   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
